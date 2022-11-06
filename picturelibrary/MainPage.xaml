@@ -14,6 +14,7 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
+        
         <RelativePanel>
             <Button Name="Hamburgerbutton" 
                     Click="Hamburgerbutton_Click"

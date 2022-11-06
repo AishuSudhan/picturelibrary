@@ -1,0 +1,90 @@
+﻿<Page
+    x:Class="picturelibrary.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:picturelibrary"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:data="using:picturelibrary.Model"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <RelativePanel>
+            <Button Name="Hamburgerbutton" 
+                    Click="Hamburgerbutton_Click"
+                    
+                    FontFamily="Segoe MDL2 Assets"
+                    Content="&#xE700;"
+                    Background="Coral"
+                    Height="50" Width="50"/>
+            <Button Name="Backbutton"
+                    Click="Backbutton_Click"
+                    Content="&#xE0A6;"
+                    RelativePanel.RightOf="Hamburgerbutton"
+                    FontFamily="Segoe MDL2 Assets"
+                    Background="CornflowerBlue"
+                    Height="50" Width="50"/>
+        </RelativePanel>
+        
+        <SplitView
+            Grid.Row="1" Name="ContentSplitView"
+                   DisplayMode="CompactOverlay"
+                   CompactPaneLength="60"
+                   OpenPaneLength="200">
+            <SplitView.Pane>
+                <ListView  Name="iconitems"
+                           ItemClick="iconitems_ItemClick"
+                           IsItemClickEnabled="True" 
+                           ItemsSource="{x:Bind iconimage}"
+                           >
+                    <ListView.ItemTemplate>
+                        <DataTemplate x:DataType="data:Icon">
+                            <StackPanel Orientation="Horizontal">
+                                <Image  Name="Icons"
+                                Source="{x:Bind IconFile}" Width="50" Height="50"
+                                        Margin="-8,15,0,10"/>
+                                <TextBlock Name="contenttext" Text="{x:Bind Category}"
+                                           Margin="12,20,0,10" FontSize="20"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </SplitView.Pane>
+            <SplitView.Content>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Row="0" Text="Nature"  FontSize="22" Name="Title"
+                               Margin="10,0,0,10"/>
+
+                    <GridView Grid.Row="1" Name="imagegridview"
+                              ItemClick="imagegridview_ItemClick"
+                              IsItemClickEnabled="True"
+                              ItemsSource="{x:Bind pictures}">
+
+                        <GridView.ItemTemplate>
+                            <DataTemplate x:DataType="data:Picture" >
+                                <Image Name="pictureimage"  
+                                       Height="100" Width="100" 
+                                       Source="{x:Bind ImageFile}"
+                                       Stretch="UniformToFill"
+                                      
+                                       Margin="0,10,0,10"/>
+                                
+                            </DataTemplate>
+                        </GridView.ItemTemplate>
+
+                    </GridView>
+
+                </Grid>
+            </SplitView.Content>
+        </SplitView>
+    </Grid>
+</Page>

@@ -24,14 +24,21 @@ namespace picturelibrary.Model
             picture.Category == category).ToList();
             selectedpictures.ForEach(picture => pictures.Add(picture));
         }
-        public static void OnePicture(ObservableCollection<Picture> pictures,string name)
+        public static void OnePicture(ObservableCollection<Picture> picturesbig,string name)
         {
-            var bigimage = GetPictures();
-            pictures.Clear();
+            var bigimage = GetBigPicture();
+            picturesbig.Clear();
             var selectname = bigimage.Where(picture => picture.Name == name).ToList();
-            selectname.ForEach(picture => pictures.Add(picture));
+            selectname.ForEach(picture => picturesbig.Add(picture));
             
         }
+        /*public static void DisapearingBigImage(ObservableCollection<Picture> picturesbig,
+            string name)
+        {
+            var disapearbigimage = GetBigPicture();
+            picturesbig.Clear();
+            disapearbigimage.
+        }*/
         
         private static List<Picture> GetPictures()
         {
@@ -45,6 +52,19 @@ namespace picturelibrary.Model
             pictures.Add(new Picture("flowers3", PictureCategory.flowers));
 
             return pictures;
+        }
+       private static List<Picture> GetBigPicture()
+        {
+
+            var picturesbig = new List<Picture>();
+            picturesbig.Add(new Picture("sunrise1", PictureCategory.sunrise));
+            picturesbig.Add(new Picture("sunrise2", PictureCategory.sunrise));
+            picturesbig.Add(new Picture("sunrise3", PictureCategory.sunrise));
+            picturesbig.Add(new Picture("flowers1", PictureCategory.flowers));
+            picturesbig.Add(new Picture("flowers2", PictureCategory.flowers));
+            picturesbig.Add(new Picture("flowers3", PictureCategory.flowers));
+
+            return picturesbig;
         }
     }
 }

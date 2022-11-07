@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>ca1df475-c43b-4544-8d32-42c0123d0232</PackageIdentityName>
     <PackageIdentityPublisher>CN=aishu</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\aishu\OneDrive\Desktop\kalacedemy practice\picturelibrary\picturelibrary\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\aishu\OneDrive\Desktop\picturelibrary\picturelibrary\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,7 +18,7 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\aishu\OneDrive\Desktop\kalacedemy practice\picturelibrary\picturelibrary\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\aishu\OneDrive\Desktop\picturelibrary\picturelibrary\bin\x86\Debug\AppX</LayoutDir>
     <RegisteredManifestChecksum>5AA35615BDCBEECAC6BED9DB0ECE55C762460E1EFD98C3B14AA07D67B9CADF1D</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>ca1df475-c43b-4544-8d32-42c0123d0232_1.0.0.0_x86__v7xt7thnkw59j</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>ca1df475-c43b-4544-8d32-42c0123d0232_v7xt7thnkw59j!App</RegisteredUserModeAppID>
@@ -27,16 +27,16 @@
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\aishu\OneDrive\Desktop\kalacedemy practice\picturelibrary\picturelibrary\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\aishu\OneDrive\Desktop\picturelibrary\picturelibrary\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-11-06T16:19:50.595</Modified>
+      <Modified>2022-11-07T14:22:47.626</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\aishu\OneDrive\Desktop\kalacedemy practice\picturelibrary\picturelibrary\bin\x86\Debug\picturelibrary.exe">
+    <AppxPackagedFile Include="C:\Users\aishu\OneDrive\Desktop\picturelibrary\picturelibrary\bin\x86\Debug\picturelibrary.exe">
       <PackagePath>entrypoint\picturelibrary.exe</PackagePath>
-      <Modified>2022-11-06T16:19:49.815</Modified>
+      <Modified>2022-11-07T14:22:46.876</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.14\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -46,99 +46,99 @@
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
       <Modified>2020-12-02T11:52:00.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aishu\OneDrive\Desktop\kalacedemy practice\picturelibrary\picturelibrary\Assets\flowers\flowers1.jpg">
+    <AppxPackagedFile Include="C:\Users\aishu\OneDrive\Desktop\picturelibrary\picturelibrary\Assets\flowers\flowers1.jpg">
       <PackagePath>Assets\flowers\flowers1.jpg</PackagePath>
       <Modified>2022-11-05T02:19:40.969</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aishu\OneDrive\Desktop\kalacedemy practice\picturelibrary\picturelibrary\Assets\flowers\flowers2.jpg">
+    <AppxPackagedFile Include="C:\Users\aishu\OneDrive\Desktop\picturelibrary\picturelibrary\Assets\flowers\flowers2.jpg">
       <PackagePath>Assets\flowers\flowers2.jpg</PackagePath>
       <Modified>2022-11-05T02:19:40.980</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aishu\OneDrive\Desktop\kalacedemy practice\picturelibrary\picturelibrary\Assets\flowers\flowers3.jpg">
+    <AppxPackagedFile Include="C:\Users\aishu\OneDrive\Desktop\picturelibrary\picturelibrary\Assets\flowers\flowers3.jpg">
       <PackagePath>Assets\flowers\flowers3.jpg</PackagePath>
       <Modified>2022-11-05T02:19:40.966</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aishu\OneDrive\Desktop\kalacedemy practice\picturelibrary\picturelibrary\Assets\IconFile\sun.jpg">
+    <AppxPackagedFile Include="C:\Users\aishu\OneDrive\Desktop\picturelibrary\picturelibrary\Assets\IconFile\sun.jpg">
       <PackagePath>Assets\IconFile\sun.jpg</PackagePath>
       <Modified>2022-11-05T04:08:55.240</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aishu\OneDrive\Desktop\kalacedemy practice\picturelibrary\picturelibrary\Assets\IconFile\flower.jpg">
+    <AppxPackagedFile Include="C:\Users\aishu\OneDrive\Desktop\picturelibrary\picturelibrary\Assets\IconFile\flower.jpg">
       <PackagePath>Assets\IconFile\flower.jpg</PackagePath>
       <Modified>2022-11-05T04:08:55.234</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aishu\OneDrive\Desktop\kalacedemy practice\picturelibrary\picturelibrary\Assets\sunrise\sunrise1.jpg">
+    <AppxPackagedFile Include="C:\Users\aishu\OneDrive\Desktop\picturelibrary\picturelibrary\Assets\sunrise\sunrise1.jpg">
       <PackagePath>Assets\sunrise\sunrise1.jpg</PackagePath>
       <Modified>2022-11-05T02:20:07.710</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aishu\OneDrive\Desktop\kalacedemy practice\picturelibrary\picturelibrary\Assets\sunrise\sunrise2.jpg">
+    <AppxPackagedFile Include="C:\Users\aishu\OneDrive\Desktop\picturelibrary\picturelibrary\Assets\sunrise\sunrise2.jpg">
       <PackagePath>Assets\sunrise\sunrise2.jpg</PackagePath>
       <Modified>2022-11-05T02:20:07.714</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aishu\OneDrive\Desktop\kalacedemy practice\picturelibrary\picturelibrary\Assets\sunrise\sunrise3.jpg">
+    <AppxPackagedFile Include="C:\Users\aishu\OneDrive\Desktop\picturelibrary\picturelibrary\Assets\sunrise\sunrise3.jpg">
       <PackagePath>Assets\sunrise\sunrise3.jpg</PackagePath>
       <Modified>2022-11-05T02:20:07.705</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aishu\OneDrive\Desktop\kalacedemy practice\picturelibrary\picturelibrary\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\aishu\OneDrive\Desktop\picturelibrary\picturelibrary\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2022-11-05T02:04:21.480</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aishu\OneDrive\Desktop\kalacedemy practice\picturelibrary\picturelibrary\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\aishu\OneDrive\Desktop\picturelibrary\picturelibrary\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2022-10-14T05:02:58.588</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aishu\OneDrive\Desktop\kalacedemy practice\picturelibrary\picturelibrary\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\aishu\OneDrive\Desktop\picturelibrary\picturelibrary\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2022-10-14T05:02:58.589</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aishu\OneDrive\Desktop\kalacedemy practice\picturelibrary\picturelibrary\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\aishu\OneDrive\Desktop\picturelibrary\picturelibrary\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2022-10-14T05:02:58.589</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aishu\OneDrive\Desktop\kalacedemy practice\picturelibrary\picturelibrary\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\aishu\OneDrive\Desktop\picturelibrary\picturelibrary\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2022-10-14T05:02:58.590</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aishu\OneDrive\Desktop\kalacedemy practice\picturelibrary\picturelibrary\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\aishu\OneDrive\Desktop\picturelibrary\picturelibrary\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2022-10-14T05:02:58.590</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aishu\OneDrive\Desktop\kalacedemy practice\picturelibrary\picturelibrary\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\aishu\OneDrive\Desktop\picturelibrary\picturelibrary\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2022-10-14T05:02:58.590</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aishu\OneDrive\Desktop\kalacedemy practice\picturelibrary\picturelibrary\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\aishu\OneDrive\Desktop\picturelibrary\picturelibrary\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2022-10-14T05:02:58.591</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aishu\OneDrive\Desktop\kalacedemy practice\picturelibrary\picturelibrary\bin\x86\Debug\picturelibrary.xr.xml">
+    <AppxPackagedFile Include="C:\Users\aishu\OneDrive\Desktop\picturelibrary\picturelibrary\bin\x86\Debug\picturelibrary.xr.xml">
       <PackagePath>picturelibrary.xr.xml</PackagePath>
-      <Modified>2022-11-06T15:52:52.181</Modified>
+      <Modified>2022-11-07T14:01:42.151</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aishu\OneDrive\Desktop\kalacedemy practice\picturelibrary\picturelibrary\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\aishu\OneDrive\Desktop\picturelibrary\picturelibrary\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2022-11-06T16:19:49.723</Modified>
+      <Modified>2022-11-07T14:22:46.783</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aishu\OneDrive\Desktop\kalacedemy practice\picturelibrary\picturelibrary\bin\x86\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\aishu\OneDrive\Desktop\picturelibrary\picturelibrary\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2022-11-06T16:19:49.724</Modified>
+      <Modified>2022-11-07T14:22:46.785</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2020-12-02T09:52:06.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aishu\OneDrive\Desktop\kalacedemy practice\picturelibrary\picturelibrary\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\aishu\OneDrive\Desktop\picturelibrary\picturelibrary\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <Modified>2022-11-05T04:32:22.684</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aishu\OneDrive\Desktop\kalacedemy practice\picturelibrary\picturelibrary\bin\x86\Debug\Core\picturelibrary.exe">
+    <AppxPackagedFile Include="C:\Users\aishu\OneDrive\Desktop\picturelibrary\picturelibrary\bin\x86\Debug\Core\picturelibrary.exe">
       <PackagePath>picturelibrary.exe</PackagePath>
-      <Modified>2022-11-06T16:19:50.591</Modified>
+      <Modified>2022-11-07T14:22:47.614</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

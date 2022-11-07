@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\aishu\\OneDrive\\Desktop\\kalacedemy practice\\picturelibrary\\picturelibrary\\picturelibrary.csproj": {}
+    "C:\\Users\\aishu\\OneDrive\\Desktop\\picturelibrary\\picturelibrary\\picturelibrary.csproj": {}
   },
   "projects": {
-    "C:\\Users\\aishu\\OneDrive\\Desktop\\kalacedemy practice\\picturelibrary\\picturelibrary\\picturelibrary.csproj": {
+    "C:\\Users\\aishu\\OneDrive\\Desktop\\picturelibrary\\picturelibrary\\picturelibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aishu\\OneDrive\\Desktop\\kalacedemy practice\\picturelibrary\\picturelibrary\\picturelibrary.csproj",
+        "projectUniqueName": "C:\\Users\\aishu\\OneDrive\\Desktop\\picturelibrary\\picturelibrary\\picturelibrary.csproj",
         "projectName": "picturelibrary",
-        "projectPath": "C:\\Users\\aishu\\OneDrive\\Desktop\\kalacedemy practice\\picturelibrary\\picturelibrary\\picturelibrary.csproj",
+        "projectPath": "C:\\Users\\aishu\\OneDrive\\Desktop\\picturelibrary\\picturelibrary\\picturelibrary.csproj",
         "packagesPath": "C:\\Users\\aishu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aishu\\OneDrive\\Desktop\\kalacedemy practice\\picturelibrary\\picturelibrary\\obj\\",
+        "outputPath": "C:\\Users\\aishu\\OneDrive\\Desktop\\picturelibrary\\picturelibrary\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [

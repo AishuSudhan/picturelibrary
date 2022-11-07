@@ -14,6 +14,7 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using picturelibrary.Model;
 using System.Collections.ObjectModel;
+using Windows.UI.Core;
 
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
@@ -28,6 +29,7 @@ namespace picturelibrary
         private ObservableCollection<Picture> pictures;
         private List<Icon> iconimage;
         private ObservableCollection<Picture> bigimage;
+        private ObservableCollection<Picture> picturesbig;
         public MainPage()
         {
             this.InitializeComponent();
@@ -36,6 +38,9 @@ namespace picturelibrary
 
             bigimage = new ObservableCollection<Picture>();
             PictureManager.GetAllPictures(bigimage);
+
+            picturesbig = new ObservableCollection<Picture>();
+            
 
             iconimage = new List<Icon>();
             iconimage.Add(new Icon
@@ -68,10 +73,11 @@ namespace picturelibrary
 
         private void imagegridview_ItemClick(object sender, ItemClickEventArgs e)
         {
+            bigimagegridview.Visibility = Visibility.Visible;
             var selectitem = (Picture)e.ClickedItem;
-            PictureManager.OnePicture(pictures,selectitem.Name);
-            Backbutton.Visibility = Visibility.Visible;
-           
+            PictureManager.OnePicture(picturesbig, selectitem.Name);
+            Backbutton.Visibility = Visibility.Collapsed;
+            Title.Visibility = Visibility.Collapsed;
         }
 
         private void iconitems_ItemClick(object sender, ItemClickEventArgs e)
@@ -79,15 +85,26 @@ namespace picturelibrary
             var items = (Icon)e.ClickedItem;
             PictureManager.GetAllPicturesByCategory(pictures, items.Category);
             Title.Text = items.Category.ToString();
-           // Title.Visibility = Visibility.Collapsed;
+           Title.Visibility = Visibility.Collapsed;
             Backbutton.Visibility = Visibility.Visible;
         }
 
-       /* private void pictureimage_ImageOpened(object sender, RoutedEventArgs e)
+        private void backtonormalsize_Click(object sender, RoutedEventArgs e)
         {
-            var display = (Picture)e.OriginalSource;
-            this.Height = 500;
-            this.Width = 500;
-        }*/
+            bigimagegridview.Visibility = Visibility.Collapsed;
+            PictureManager.GetAllPictures(pictures);
+            Backbutton.Visibility = Visibility.Collapsed;
+            Title.Text = "Nature";
+            iconitems.SelectedItem = null;
+            
+
+        }
+
+        /* private void pictureimage_ImageOpened(object sender, RoutedEventArgs e)
+         {
+             var display = (Picture)e.OriginalSource;
+             this.Height = 500;
+             this.Width = 500;
+         }*/
     }
 }

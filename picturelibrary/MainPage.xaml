@@ -41,8 +41,8 @@
                 <ListView  Name="iconitems"
                            ItemClick="iconitems_ItemClick"
                            IsItemClickEnabled="True" 
-                           ItemsSource="{x:Bind iconimage}"
-                           >
+                           ItemsSource="{x:Bind iconimage}">
+
                     <ListView.ItemTemplate>
                         <DataTemplate x:DataType="data:Icon">
                             <StackPanel Orientation="Horizontal">
@@ -78,10 +78,32 @@
                                        Stretch="UniformToFill"
                                       
                                        Margin="0,10,0,10"/>
-                                
+
                             </DataTemplate>
                         </GridView.ItemTemplate>
+                    </GridView>
+                    <GridView Name="bigimagegridview"
+                        IsItemClickEnabled="True" ItemClick="imagegridview_ItemClick"
+                              ItemsSource="{x:Bind picturesbig}">
+                        <GridView.ItemTemplate>
+                            <DataTemplate x:DataType="data:Picture">
+                                <RelativePanel>
+                                    <Image Name="displaybiggerimage"
+                                       Source="{x:Bind ImageFile}"
+                                       Height="600" Width="600">
+                                    </Image>
+                                    <Button Name="backtonormalsize"
+                                             Content="Back to Normal size"
+                                          Background="DarkOrchid"
+                                          Height="50" Width="50"
+                                            Click="backtonormalsize_Click">
 
+
+                                    </Button>
+                                </RelativePanel>
+
+                            </DataTemplate>
+                        </GridView.ItemTemplate>
                     </GridView>
 
                 </Grid>

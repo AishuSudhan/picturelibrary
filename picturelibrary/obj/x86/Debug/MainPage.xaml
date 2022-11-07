@@ -14,15 +14,16 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
+        
         <RelativePanel>
-            <Button x:ConnectionId='12' Name="Hamburgerbutton" 
+            <Button x:ConnectionId='17' Name="Hamburgerbutton" 
                                                  
                     
                     FontFamily="Segoe MDL2 Assets"
                     Content="&#xE700;"
                     Background="Coral"
                     Height="50" Width="50"/>
-            <Button x:ConnectionId='13' Name="Backbutton"
+            <Button x:ConnectionId='18' Name="Backbutton"
                                             
                     Content="&#xE0A6;"
                     RelativePanel.RightOf="Hamburgerbutton"
@@ -40,8 +41,8 @@
                 <ListView x:ConnectionId='3'  Name="iconitems"
                                                           
                            IsItemClickEnabled="True" 
-                                                           
-                           >
+                                                           >
+
                     <ListView.ItemTemplate>
                         <DataTemplate                       >
                             <StackPanel x:ConnectionId='5' Orientation="Horizontal">
@@ -71,16 +72,38 @@
 
                         <GridView.ItemTemplate>
                             <DataTemplate                           >
-                                <Image x:ConnectionId='11' Name="pictureimage"  
+                                <Image x:ConnectionId='16' Name="pictureimage"  
                                        Height="100" Width="100" 
                                                                   
                                        Stretch="UniformToFill"
                                       
                                        Margin="0,10,0,10"/>
-                                
+
                             </DataTemplate>
                         </GridView.ItemTemplate>
+                    </GridView>
+                    <GridView x:ConnectionId='10' Name="bigimagegridview"
+                        IsItemClickEnabled="True"                                    
+                                                                >
+                        <GridView.ItemTemplate>
+                            <DataTemplate                          >
+                                <RelativePanel x:ConnectionId='12'>
+                                    <Image x:ConnectionId='13' Name="displaybiggerimage"
+                                                                  
+                                       Height="600" Width="600">
+                                    </Image>
+                                    <Button x:ConnectionId='14' Name="backtonormalsize"
+                                             Content="Back to Normal size"
+                                          Background="DarkOrchid"
+                                          Height="50" Width="50"
+                                                                          >
 
+
+                                    </Button>
+                                </RelativePanel>
+
+                            </DataTemplate>
+                        </GridView.ItemTemplate>
                     </GridView>
 
                 </Grid>

@@ -96,15 +96,8 @@ namespace picturelibrary
             Backbutton.Visibility = Visibility.Collapsed;
             Title.Text = "Nature";
             iconitems.SelectedItem = null;
-            
-
         }
 
-        /* private void pictureimage_ImageOpened(object sender, RoutedEventArgs e)
-         {
-             var display = (Picture)e.OriginalSource;
-             this.Height = 500;
-             this.Width = 500;
-         }*/
+        
     }
 }

@@ -10,6 +10,7 @@ namespace picturelibrary.Model
     internal class PictureManager
     {
         public static void GetAllPictures( ObservableCollection<Picture> pictures)
+            //this method will update the list incase any changes happened and get all the pictures from GetPictures
         {
             var allpictures = GetPictures();
             pictures.Clear();
@@ -17,6 +18,7 @@ namespace picturelibrary.Model
         }
         public static void GetAllPicturesByCategory(ObservableCollection<Picture> pictures,
             PictureCategory category)
+            //this method filter the pictures which matches the category with user clicked icon and make a list.
         {
             var allpictures = GetPictures();
             pictures.Clear();
@@ -25,6 +27,7 @@ namespace picturelibrary.Model
             selectedpictures.ForEach(picture => pictures.Add(picture));
         }
         public static void OnePicture(ObservableCollection<Picture> picturesbig,string name)
+            //this method willdo the part(choose the clicked picture and make it big) to change the image size after its been clicked.
         {
             var bigimage = GetBigPicture();
             picturesbig.Clear();
@@ -32,17 +35,9 @@ namespace picturelibrary.Model
             selectname.ForEach(picture => picturesbig.Add(picture));
             
         }
-        /*public static void DisapearingBigImage(ObservableCollection<Picture> picturesbig,
-            string name)
-        {
-            var disapearbigimage = GetBigPicture();
-            picturesbig.Clear();
-            disapearbigimage.
-        }*/
         
-        private static List<Picture> GetPictures()
-        {
-            
+          private static List<Picture> GetPictures()//initial List of pictures.
+          {
             var pictures = new List<Picture>();
             pictures.Add(new Picture("sunrise1", PictureCategory.sunrise));
             pictures.Add(new Picture("sunrise2", PictureCategory.sunrise));
@@ -53,7 +48,9 @@ namespace picturelibrary.Model
 
             return pictures;
         }
-       private static List<Picture> GetBigPicture()
+       private static List<Picture> GetBigPicture()// we are using this list of pictures to show the bigger image.
+            //pictures and its size are same.we are using two lists so that we can show the thumbnail size and bigger image back and forth.
+            //if we use only one list,then the images are showing either big or small(depends on code)not back and forth.
         {
 
             var picturesbig = new List<Picture>();

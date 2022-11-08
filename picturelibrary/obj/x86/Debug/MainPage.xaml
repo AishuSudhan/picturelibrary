@@ -10,15 +10,18 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="11*"/>
+            <ColumnDefinition Width="489*"/>
+        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        
-        <RelativePanel>
+
+        <RelativePanel Grid.ColumnSpan="2">
             <Button x:ConnectionId='17' Name="Hamburgerbutton" 
                                                  
-                    
                     FontFamily="Segoe MDL2 Assets"
                     Content="&#xE700;"
                     Background="Coral"
@@ -31,12 +34,11 @@
                     Background="CornflowerBlue"
                     Height="50" Width="50"/>
         </RelativePanel>
-        
-        <SplitView x:ConnectionId='2'
-            Grid.Row="1" Name="ContentSplitView"
+
+        <SplitView x:ConnectionId='2' Name="ContentSplitView"
                    DisplayMode="CompactOverlay"
                    CompactPaneLength="60"
-                   OpenPaneLength="200">
+                   OpenPaneLength="200" Grid.ColumnSpan="2" Margin="0,50,0,0" Grid.RowSpan="2">
             <SplitView.Pane>
                 <ListView x:ConnectionId='3'  Name="iconitems"
                                                           
@@ -96,7 +98,8 @@
                                              Content="Back to Normal size"
                                           Background="DarkOrchid"
                                           Height="50" Width="50"
-                                                                          >
+                                                                          
+                                            RelativePanel.AlignLeftWithPanel="True">
 
 
                                     </Button>

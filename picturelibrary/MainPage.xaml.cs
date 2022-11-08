@@ -27,23 +27,27 @@ namespace picturelibrary
     public sealed partial class MainPage : Page
     {
         private ObservableCollection<Picture> pictures;
+        //observable collection observabes the list and updates the class if there is any changes happened by user in the list of items.
+        //it will do it on its own.we dont have to do it by any codes. 
         private List<Icon> iconimage;
         private ObservableCollection<Picture> bigimage;
         private ObservableCollection<Picture> picturesbig;
         public MainPage()
         {
             this.InitializeComponent();
-             pictures = new ObservableCollection<Picture>();
-            PictureManager.GetAllPictures(pictures);
+             pictures = new ObservableCollection<Picture>();//creating instance for the object pictures(so that it creates memory space.)
+             PictureManager.GetAllPictures(pictures);//calling GetAllPicture utility method from PictureManager.cs and passing pictures into that method.
 
-            bigimage = new ObservableCollection<Picture>();
+            bigimage = new ObservableCollection<Picture>();//creating instance for the object bigimage
             PictureManager.GetAllPictures(bigimage);
 
-            picturesbig = new ObservableCollection<Picture>();
-            
+            picturesbig = new ObservableCollection<Picture>();//creating instance for the object picturesbig
 
-            iconimage = new List<Icon>();
-            iconimage.Add(new Icon
+
+            iconimage = new List<Icon>();//creating instance for the object iconimage
+            //since icon list has less work and no methods to call and no need for observablecollection it wont change that much
+            //we are not creating seperate utility class for icon list and assing proerty values in xaml.cs itself.
+            iconimage.Add(new Icon    
             {
                 IconFile = $"Assets/IconFile/flower.jpg",
                 Category = PictureCategory.flowers
@@ -59,7 +63,9 @@ namespace picturelibrary
 
         private void Hamburgerbutton_Click(object sender, RoutedEventArgs e)
         {
+           
             ContentSplitView.IsPaneOpen = !ContentSplitView.IsPaneOpen;
+            //this will make the pane open if it is not open and close it if it is open.
            
         }
 
@@ -68,13 +74,13 @@ namespace picturelibrary
             PictureManager.GetAllPictures(pictures);
             Backbutton.Visibility = Visibility.Collapsed;
             Title.Text = "Nature";
-            iconitems.SelectedItem = null;
+            iconitems.SelectedItem = null;//it will stop the icon showing as selected(blue imaage on selected icon) after it moves to different image. 
         }
 
         private void imagegridview_ItemClick(object sender, ItemClickEventArgs e)
         {
             bigimagegridview.Visibility = Visibility.Visible;
-            var selectitem = (Picture)e.ClickedItem;
+            var selectitem = (Picture)e.ClickedItem;//e is the item clicked(which is Picture class object in grid view) 
             PictureManager.OnePicture(picturesbig, selectitem.Name);
             Backbutton.Visibility = Visibility.Collapsed;
             Title.Visibility = Visibility.Collapsed;
@@ -82,7 +88,7 @@ namespace picturelibrary
 
         private void iconitems_ItemClick(object sender, ItemClickEventArgs e)
         {
-            var items = (Icon)e.ClickedItem;
+            var items = (Icon)e.ClickedItem;//e is the item clicked which is Icon class Object.
             PictureManager.GetAllPicturesByCategory(pictures, items.Category);
             Title.Text = items.Category.ToString();
            Title.Visibility = Visibility.Collapsed;
